@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@google/genai": "^0.14.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.5.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "screenshot-desktop": "^1.15.1",
+    "tesseract.js": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.15.18",
+    "electron": "^36.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "name": "gemini-ocr-overlay",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node --loader ts-node/esm test.ts",
+    "ai": "electron ."
+  }
+}
